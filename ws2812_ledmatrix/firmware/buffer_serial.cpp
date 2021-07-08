@@ -2,7 +2,6 @@
 #include <string>
 #include <cstring>
 #include "buffer_serial.h"
-#include "Rainbow.h"
 
 #define MAX_SND 40
 #define MAX_RCV 100
@@ -77,10 +76,6 @@ void BufferSerial::cmd_process(char cmd, char* data, int len)
   switch (cmd) {
     case 1 : 
       Serial.println("cmd : ");  Serial.println(cmd);
-      break;
-    case 65 : 
-      functionTest(data, len);
-      Serial.println("2222222222222 : ");  Serial.println(cmd);
       break;
     default:
       Serial.println("cmd : ");  Serial.println(cmd);

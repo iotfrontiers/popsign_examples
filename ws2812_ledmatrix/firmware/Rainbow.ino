@@ -2,7 +2,6 @@
 #include "buffer_serial.h"
 #include "BluetoothSerial.h"
 #include "bluetooth.h"
-#include "Rainbow.h"
 
 #define LEDS_COUNT  256
 #define LEDS_PIN	25
@@ -24,14 +23,27 @@ void setup() {
   Serial.begin(115200);
   Serial.println("setup!!!");
 }
-int red = 0;
-int green = 0;
-int blue = 0;
 
-void loop() 
-{
+void loop() {
   bluetoothMode();
+  // scr_all_red();    
+  // scr_clear();  
 
+  // scr_all_green();  
+  // scr_clear();
+
+  // scr_all_blue();  
+  // scr_clear();
+
+  // scr_all_white();  
+  // scr_clear();
+
+  //scr_all_green();    
+  //delay(1000);
+  //scr_clear();
+  //scr_all_blue();    
+  //delay(1000);
+  //scr_clear();
 }
 
 void bluetoothMode() // 0 ~ 1 Logo Setion, 2 ~ 3 bluetooth init, 4 is bt ongoing
@@ -95,6 +107,8 @@ void scr_all_white()
   LED_DELAY;
 }
 
+
+
 void scr_clear()
 {
  
@@ -103,25 +117,5 @@ void scr_clear()
     }
     strip.show();
     LED_DELAY;
-}
-
-void functionTest(char* data, int len) {
-
-  if((data[0] > 0) && (data[1] == 0) && (data[2] == 0)){
-    scr_all_red();
-    //scr_clear();
-  }
-  else if((data[0] == 0) && (data[1] > 0) && (data[2] == 0)){
-    scr_all_green();
-    //scr_clear();
-  }
-  else if((data[0] == 0) && (data[1] == 0) && (data[2] > 0)){
-    scr_all_blue();
-    //scr_clear();
-  }
-  else if((data[0] > 0) && (data[1] > 0) && (data[2] > 0)){
-    scr_all_white();
-    //scr_clear();
-  }
-
+  
 }

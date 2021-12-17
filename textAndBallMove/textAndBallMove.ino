@@ -7,7 +7,7 @@
 
 #define BALL_COUNT 3
 
-P3RGB64x32MatrixPanel matrix(25, 26, 27, 21, 22, 0, 15, 32, 33, 12, 16, 17, 4);
+P3RGB64x32MatrixPanel matrix(25, 26, 27, 21, 22, 0, 15, 32, 33, 12, 5, 23, 4);
 
 const char str[] PROGMEM = "CHANGE THE WORLD, BRIGHT YOUR LIFE";
 

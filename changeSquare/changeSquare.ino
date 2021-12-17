@@ -19,7 +19,7 @@
 #include <Adafruit_GFX.h>   // Core graphics library
 #include <P3RGB64x32MatrixPanel.h>
 
-P3RGB64x32MatrixPanel *matrix = new P3RGB64x32MatrixPanel(25, 26, 27, 21, 22, 0, 15, 32, 33, 12, 16, 17, 4);
+P3RGB64x32MatrixPanel *matrix = new P3RGB64x32MatrixPanel(25, 26, 27, 21, 22, 0, 15, 32, 33, 12, 5, 23, 4);
 
 // Panel Matrix doesn't fully work like Neomatrix (which I originally
 // wrote this demo for), so map a few calls to be compatible. The rest

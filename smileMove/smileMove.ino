@@ -1,6 +1,6 @@
 // RGB Panel GFX Demo example for 64x32 panel
 
-#include <RGBmatrixPanel.h>
+#include "RGBmatrixPanel.h"
 #include "smileytongue24.h"
 
 #include <Adafruit_GFX.h>   // Core graphics library

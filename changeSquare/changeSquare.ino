@@ -4,7 +4,7 @@
 
 // WILL NOT FIT on ARDUINO UNO -- requires a Mega, M0 or M4 board
 
-#include <RGBmatrixPanel.h>
+#include "RGBmatrixPanel.h"
 // #include "smileytongue24.h"
 
 // Most of the signal pins are configurable, but the CLK pin has some
